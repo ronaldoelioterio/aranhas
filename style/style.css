@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'spiderfon';
+    src: url('../fonts/spiderfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family:'spokyspidey' ;
+    src: url('../fonts/Spoky\ Spiders.ttf') format('truetype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    line-height: 2em;
+}
+
+:root {
+    --fonte01: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte02: 'spiderfon';
+    --fonte03: 'spokyspidey';
+}
+
+header {
+    background-color: rgba(87, 45, 2, 0.845);
+    text-align: center;
+    color: rgb(243, 236, 236);
+}
+
+header > h1 {
+    padding-top: 40px;
+    font-family: var(--fonte02);
+    font-weight: 100;
+    font-variant: small-caps;
+    font-size: 5vw;
+}
+
+header > p {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    font-family: var(--fonte01);
+    font-size: 0.7em;
+    font-variant: small-caps;
+}
+
+a {
+    padding: 3px;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: overline;
+    background-color:rgba(87, 44, 2, 0.427) ;
+    border-radius: 10px 0px;
+    transition-duration: 0.6s;
+}
+
+section {
+    padding-left: 40px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+section.normal {
+    background-image: linear-gradient(to bottom, rgb(125, 152, 125), rgb(185, 184, 184));
+}
+
+section#ultimo {
+    background-image: linear-gradient(to bottom, rgb(185, 184, 184), rgb(125, 152,125));
+}
+
+section.imagem {
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img01 {
+    background-image: url('../imagens/pexels-chase-mcbride-2105250-3731977.jpg');
+    background-position: center right;
+}
+
+section.imagem > p {
+    display: inline-block;
+    background-color: rgba(1, 1, 1, 0.375);
+    padding: 5px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.367);
+    color: white;
+}
+
+section > p {
+    font-family: var(--fonte03);
+    font-weight: 100;
+    font-size: 3.3vw;
+}
+
+footer { 
+    padding: 3px;
+    background-color: black;
+    text-align: center;
+    font-size: 0.6em;
+    color: rgb(243, 236, 236);
+}
